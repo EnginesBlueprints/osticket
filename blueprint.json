@@ -27,7 +27,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-03T08:42:06+10:00"
+    "timestamp": "2019-05-03T08:51:24+10:00"
   },
   "software": {
     "base": {
@@ -59,12 +59,11 @@
     },
     "installed_packages": [
       {
-        "name": "osTicket-v1.12.zip",
-        "download_type": "http(s)",
-        "source_url": "http://osticket.com/sites/default/files/download/osTicket-v1.12.zip",
+        "name": "osTicket",
+        "download_type": "git",
+        "source_url": "https://github.com/osTicket/osTicket",
         "destination": "./",
-        "extraction_command": "unzip -u",
-        "path_to_extracted": "upload"
+        "path_to_extracted": "osTicket"
       }
     ],
     "required_modules": [
