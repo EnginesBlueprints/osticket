@@ -27,7 +27,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-03T08:51:24+10:00"
+    "timestamp": "2019-05-03T09:19:12+10:00"
   },
   "software": {
     "base": {
@@ -83,7 +83,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": "_Engines_Builder(engine_name)",
+          "service_name": "config",
           "group": "_Engines_Builder(group_uid)",
           "user": "_Engines_Builder(data_uid)",
           "volume_src": " ",
@@ -114,7 +114,8 @@
     ],
     "persistent_files": [
       {
-        "path": "app/include/ost-config.php"
+        "path": "app/include/ost-config.php",
+        "volume_name": "config"
       }
     ],
     "framework_specific": {
