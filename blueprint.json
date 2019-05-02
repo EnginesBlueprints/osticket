@@ -27,7 +27,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-03T08:37:53+10:00"
+    "timestamp": "2019-05-03T08:42:06+10:00"
   },
   "software": {
     "base": {
@@ -76,7 +76,7 @@
       {
         "name": "intl",
         "type": "php",
-        "os_package": "php7.0-intl"
+        "os_package": "php-intl"
       }
     ],
     "service_configurations": [
