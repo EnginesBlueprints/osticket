@@ -27,7 +27,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-03T09:19:12+10:00"
+    "timestamp": "2019-05-07T09:45:30+10:00"
   },
   "software": {
     "base": {
@@ -110,12 +110,6 @@
     "file_write_permissions": [
       {
         "path": "include/ost-config.php"
-      }
-    ],
-    "persistent_files": [
-      {
-        "path": "app/include/ost-config.php",
-        "volume_name": "config"
       }
     ],
     "framework_specific": {
