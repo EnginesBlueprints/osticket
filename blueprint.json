@@ -28,7 +28,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T12:47:06+10:00"
+    "timestamp": "2019-05-07T13:04:23+10:00"
   },
   "software": {
     "base": {
@@ -121,6 +121,27 @@
           "db_password": "_Engines_System(random(10))",
           "collation": "utf8_general_ci",
           "full_access": "0"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "ldap_access",
+        "variables": {
+          "access_dn": "uid=_Engines_Builder(engine_name),ou=hosts,ou=Engines,dc=engines,dc=internal",
+          "ldap_password": "_Engines_System(random(8))",
+          "service_name": "_Engines_Builder(engine_name)",
+          "type": "access"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "ldap_group",
+        "variables": {
+          "type": "group",
+          "cn": "_Engines_Builder(engine_name)",
+          "read_access": "all",
+          "write_access": "none",
+          "service_name": "group_Engines_Field(cn)"
         }
       }
     ],
