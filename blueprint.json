@@ -28,7 +28,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T10:20:21+10:00"
+    "timestamp": "2019-05-07T10:38:36+10:00"
   },
   "software": {
     "base": {
@@ -48,7 +48,7 @@
       },
       "install": {
         "language": "sh",
-        "content": "#!/bin/sh\r\n\r\ncd /tmp/\r\ngit clone https://github.com/osTicket/osTicket\r\ncd osTicket\r\nphp manage.php deploy --setup /home/app"
+        "content": "#!/bin/sh\r\n\r\ncd /tmp/\r\ngit clone https://github.com/osTicket/osTicket\r\ncd osTicket\r\nphp manage.php deploy --setup /home/app\r\ncd /home/app\r\ncp include/ost-sampleconfig.php include/ost-config.php \r\n"
       },
       "post_install": {
         "language": "sh",
