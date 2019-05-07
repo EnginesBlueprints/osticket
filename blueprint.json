@@ -28,7 +28,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T11:19:12+10:00"
+    "timestamp": "2019-05-07T11:42:12+10:00"
   },
   "software": {
     "base": {
@@ -66,6 +66,13 @@
         "source_url": "https://github.com/osTicket/osTicket",
         "destination": "/home/app",
         "path_to_extracted": "osTicket"
+      },
+      {
+        "name": "osTicket-plugins",
+        "download_type": "git",
+        "source_url": "https://github.com/osTicket/osTicket-plugins",
+        "destination": "/home/app/include/pluggins.tmp",
+        "path_to_extracted": "osTicket-plugins"
       }
     ],
     "required_modules": [
@@ -110,10 +117,6 @@
       "language": "text"
     },
     "file_write_permissions": [
-      {
-        "path": "/home/app",
-        "recursive": true
-      },
       {
         "path": "include/ost-config.php"
       }
