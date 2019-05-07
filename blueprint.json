@@ -20,14 +20,15 @@
       "display": {
         "title": "OSTicket",
         "label": "OSTicket",
-        "description": "osTicket is a widely-used and trusted open source support ticket system. It seamlessly routes inquiries created via email, web-forms and phone calls into a simple, easy-to-use, multi-user, web-based customer support platform. osTicket comes packed with more features and tools than most of the expensive (and complex) support ticket systems on the market. The best part is, it's completely free."
+        "description": "osTicket is a widely-used and trusted open source support ticket system. It seamlessly routes inquiries created via email, web-forms and phone calls into a simple, easy-to-use, multi-user, web-based customer support platform. osTicket comes packed with more features and tools than most of the expensive (and complex) support ticket systems on the market. The best part is, it's completely free.",
+        "url": "https://osticket.com/"
       },
       "license": {
         "label": "GNU GENERAL PUBLIC LICENSE V3",
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T09:45:30+10:00"
+    "timestamp": "2019-05-07T10:09:36+10:00"
   },
   "software": {
     "base": {
@@ -47,7 +48,7 @@
       },
       "install": {
         "language": "sh",
-        "content": "\r\ncp app/include/ost-sampleconfig.php app/include/ost-config.php\r\n"
+        "content": "#!/sh\r\n\r\ncd /tmp/\r\ngit clone https://github.com/osTicket/osTicket\r\n\r\nphp manage.php deploy --setup /home/app"
       },
       "post_install": {
         "language": "sh",
@@ -57,15 +58,6 @@
         "language": "sh"
       }
     },
-    "installed_packages": [
-      {
-        "name": "osTicket",
-        "download_type": "git",
-        "source_url": "https://github.com/osTicket/osTicket",
-        "destination": "./",
-        "path_to_extracted": "osTicket"
-      }
-    ],
     "required_modules": [
       {
         "name": "imap",
