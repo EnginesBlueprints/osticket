@@ -28,7 +28,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T11:42:12+10:00"
+    "timestamp": "2019-05-07T12:01:23+10:00"
   },
   "software": {
     "base": {
@@ -48,7 +48,7 @@
       },
       "install": {
         "language": "sh",
-        "content": "#!/bin/sh\r\n\r\n\r\ncd /home/app\r\nphp manage.php deploy --setup /home/app\r\n\r\ncp include/ost-sampleconfig.php include/ost-config.php \r\n"
+        "content": "#!/bin/sh\r\n\r\n\r\ncd /home/app\r\nphp manage.php deploy --setup /home/app\r\n\r\ncp include/ost-sampleconfig.php include/ost-config.php \r\ncd /home/app/include\r\n/home/engines/scripts/grant_rw_access.sh -R app/include/plugins\r\ncp  pluggins.tmp/* plugins/\r\ncd plugins/\r\n php make.php hydrate\r\n echo\r\n \r\n "
       },
       "post_install": {
         "language": "sh",
@@ -85,6 +85,11 @@
         "name": "intl",
         "type": "php",
         "os_package": "php-intl"
+      },
+      {
+        "name": "curl",
+        "type": "php",
+        "os_package": "php-curl"
       }
     ],
     "service_configurations": [
