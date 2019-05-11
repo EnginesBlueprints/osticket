@@ -28,14 +28,14 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2019-05-07T13:04:23+10:00"
+    "timestamp": "2019-05-11T11:16:12+10:00"
   },
   "software": {
     "base": {
       "name": "osticket",
       "framework": "apache_php",
       "deployment_type": "web",
-      "http_protocol": "http_and_https",
+      "http_protocol": "https_only",
       "memory": {
         "required": 128,
         "recommended": 164
