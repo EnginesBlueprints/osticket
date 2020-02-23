@@ -28,7 +28,7 @@
         "url": "http://www.gnu.org/copyleft/gpl.html"
       }
     },
-    "timestamp": "2020-02-24T08:35:38+11:00"
+    "timestamp": "2020-02-24T09:00:52+11:00"
   },
   "software": {
     "base": {
@@ -52,7 +52,7 @@
       },
       "post_install": {
         "language": "sh",
-        "content": "#!/bin/bash\r\n/home/engines/scripts/revoke_rw_access.sh  app/include/ost-config.php\r\n\r\n/home/engines/scripts/grant_ugo_rw_access.sh -R app\r\n\r\nrm -rf /home/app/setup\r\n/home/engines/scripts/revoke_rw_access.sh -R app\r\n/home/engines/scripts/revoke_rw_access.sh  app/include/ost-config.php"
+        "content": "#!/bin/sh\r\n/home/engines/scripts/revoke_rw_access.sh  app/include/ost-config.php\r\n\r\n/home/engines/scripts/grant_ugo_rw_access.sh -R app\r\n\r\nrm -rf /home/app/setup\r\n/home/engines/scripts/revoke_rw_access.sh -R app\r\n/home/engines/scripts/revoke_rw_access.sh  app/include/ost-config.php"
       },
       "shutdown": {
         "language": "sh"
